@@ -7,48 +7,60 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/lib/reset.css">
     <link rel="stylesheet" href="/lib/style.css">
+    <link rel="stylesheet" href="/lib/slider.css">
+
     <title>Document</title>
 </head>
 <body>
+<!--<div class="colored-blocks cb1">
+    <div class="c-block c-block1"></div>
+    <div class="c-block c-block2"></div>
+</div>-->
 <div id="a4-paper">
     <!--two upper colored blocks -->
-    <div class="colored-blocks">
-        <div class="c-block c-block1"></div>
-        <div class="c-block c-block2"></div>
-    </div>
+
     <!--beginning of the header -->
     <header>
-        <div id="photo-section">
+        <div id="avatar-section">
             <div class="round-div">
                 <picture>
+                    <source media=""
+                            srcset="">
+                    <source media=""
+                            srcset="">
                     <img id="avatar" class="round-img"
-                         src="./assets/images/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg"
+                         src="/assets/images/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg"
                          alt="avatar">
                 </picture>
 
             </div>
         </div>
-        <section class="name-section">
-            <div class="name">
+        <div id="name-section">
+            <div>
                 <h1>Vladislav </br> Pokhyl</h1>
-
+                <h3>Software developer ____</h3>
             </div>
-            <h4 id='prof'>Software developer ____</h4>
-        </section>
+
+
+        </div>
     </header>
     <!--end of the header -->
     <!--main content start -->
     <main>
         <!--LEFT SECTION START-->
         <section id="content-left-section">
-
             <!--profile section start-->
             <div id="profile-section">
                 <div class="title">
                     <h2>profile</h2>
                 </div>
                 <div class="profile-item">
-                    <p class="italic-font"></p>
+                    <p class="italic-font item-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                        blanditiis
+                        corporis cumque modi nemo odio saepe sit temporibus tenetur unde! A adipisci excepturi
+                        exercitationem, nisi quasi recusandae voluptatum. A cum doloremque dolorum eius esse ex harum
+                        laboriosam laborum minus reiciendis, repellat sed velit. Atque, iusto nobis optio quidem rerum
+                        vel?</p>
                 </div>
             </div>
             <!--profile section end-->
@@ -56,36 +68,53 @@
             <!--contact section start-->
             <div id="contacts-section">
                 <div class="title">
-                    <h2>profile</h2>
+                    <h2>contacts</h2>
                 </div>
                 <div id="contacts-list">
                     <ul>
                         <li>
                             <div class="contact-item">
-                                <a href="" class="contact-link">
-                                <div class="contact-container">
-                                    <p class="contact-title">phone</p>
-                                    <p>+380680190945</p>
-                                    <picture><img src="" alt="" class="round-img"></picture>
-                                </div>
-                              </a>
+                                <a href="tel:+380680190945" class="contact-link">
+                                    <div class="contact-container">
+                                        <div class="contact-info">
+                                            <p class="contact-title">phone</p>
+                                            <p>+380680190945</p>
+                                        </div>
+                                        <div class="contact-image">
+                                            <picture><img src="/assets/images/phone.png" alt="" class="round-img">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
                         </li>
                         <li>
-                            <div class="contact-item"><a href="" class="contact-link">
+                            <div class="contact-item"><a href="mailto:vladflaber@gmail.com" class="contact-link">
                                 <div class="contact-container">
-                                    <p class="contact-title">email</p>
-                                    <p>vladflaber@gmail.com</p>
-                                    <picture><img src="" alt="" class="round-img"></picture>
+                                    <div class="contact-info">
+                                        <p class="contact-title">email</p>
+                                        <p>vladflaber@gmail.com</p>
+                                    </div>
+                                    <div class="contact-image">
+                                        <picture><img src="assets/images/mail.png" alt="" class="round-img"></picture>
+                                    </div>
                                 </div>
                             </a></div>
                         </li>
                         <li>
-                            <div class="contact-item"><a href="" class="contact-link">
+                            <div class="contact-item"><a target="_blank"
+                                                         href="https://www.google.com/maps/place/Kryvyi+Rih,+Dnipropetrovsk+Oblast,+50000/@47.9070207,33.0863363,10z/data=!3m1!4b1!4m5!3m4!1s0x40dadfe03154ab7b:0xb0fa3a177d6b186e!8m2!3d47.910483!4d33.391783"
+                                                         class="contact-link">
                                 <div class="contact-container">
-                                    <p class="contact-title">address</p>
-                                    <p>ukraine , dnepr ,kr</p>
-                                    <picture><img src="" alt="" class="round-img"></picture>
+                                    <div class="contact-info">
+                                        <p class="contact-title">address</p>
+                                        <p>Ukraine Kryvyi Rih
+                                        </p>
+                                    </div>
+                                    <div class="contact-image">
+                                        <picture><img src="assets/images/location.png" alt="" class="round-img">
+                                        </picture>
+                                    </div>
                                 </div>
                             </a></div>
                         </li>
@@ -93,19 +122,35 @@
                 </div>
                 <!--Contact section end-->
                 <!--skills section start -->
-                <div class="skills">
-                    <ul>
-                        <li>Lorem.</li>
-                        <li>Nam!</li>
-                        <li>Facere!</li>
-                        <li>Quasi.</li>
-                        <li>Error!</li>
-                        <li>Magni!</li>
-                        <li>Ipsam.</li>
-                        <li>Labore?</li>
-                        <li>Commodi!</li>
-                        <li>Consectetur!</li>
-                    </ul>
+                <div class="skills-section">
+                    <div class="title">
+                        <h2>skills</h2>
+                    </div>
+                    <div id="skills-list">
+                        <ul>
+                            <ul id="sliders-list">
+                                <li>
+                                    <p class="skill-name">Lorem ipsum.</p>
+                                    <input type="range" min="1" max="100" value="66" class="slider"></li>
+                                <li>
+                                    <p class="skill-name">Lorem ipsum.</p>
+                                    <input type="range" min="1" max="100" value="25" class="slider"></li>
+                                <li>
+                                    <p class="skill-name">Lorem ipsum.</p>
+                                    <input type="range" min="1" max="100" value="12" class="slider"></li>
+                                <li>
+                                    <p class="skill-name">Lorem ipsum.</p>
+                                    <input type="range" min="1" max="100" value="77" class="slider"></li>
+                                <li>
+                                    <p class="skill-name">Lorem ipsum.</p>
+                                    <input type="range" min="1" max="100" value="33" class="slider"></li>
+                                <li>
+                                <p class="skill-name">Lorem ipsum.</p>
+                                <input type="range" min="1" max="100" value="42" class="slider"></li>
+                            </ul>
+
+                        </ul>
+                    </div>
                 </div>
                 <!--skills section end -->
             </div>
@@ -123,7 +168,8 @@
                         <p>year : 2014</p>
                         <h4 class="education-title">ENTER YOUR FULL DEGREE NAME</h4>
                         <p class="italic-font">your college full name here</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at delectus dolor dolorem
+                        <p class="item-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at
+                            delectus dolor dolorem
                             doloremque dolorum exercitationem explicabo in, minima, numquam quaerat quis quo, recusandae
                             rem sapiente temporibus ullam velit veniam.</p>
                     </div>
@@ -131,7 +177,8 @@
                         <p>year : 2014</p>
                         <h4 class="education-title">ENTER YOUR FULL DEGREE NAME</h4>
                         <p class="italic-font">your college full name here</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at delectus dolor dolorem
+                        <p class="item-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at
+                            delectus dolor dolorem
                             doloremque dolorum exercitationem explicabo in, minima, numquam quaerat quis quo, recusandae
                             rem sapiente temporibus ullam velit veniam.</p>
                     </div>
@@ -144,10 +191,19 @@
                 <div class="title">
                     <h2>work experience</h2>
                 </div>
-                <div class="experience-component">
+                <div class="experience-item">
                     <h4>JOB POSITION/TITLE HERE</h4>
                     <p class="italic-font">company | institute name here</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, at consequuntur facere nesciunt
+                    <p class="item-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, at consequuntur
+                        facere nesciunt
+                        nostrum odit pariatur ratione repellat repudiandae voluptas. Accusantium dolorem esse
+                        exercitationem facilis labore molestiae, mollitia necessitatibus ratione.</p>
+                </div>
+                <div class="experience-item">
+                    <h4>JOB POSITION/TITLE HERE</h4>
+                    <p class="italic-font">company | institute name here</p>
+                    <p class="item-info"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, at consequuntur
+                        facere nesciunt
                         nostrum odit pariatur ratione repellat repudiandae voluptas. Accusantium dolorem esse
                         exercitationem facilis labore molestiae, mollitia necessitatibus ratione.</p>
                 </div>
@@ -161,10 +217,11 @@
     </main>
     <!--main content end-->
     <!--two downside colored blocks -->
-    <div class="colored-blocks">
-        <div class="c-block c-block1"></div>
-        <div class="c-block c-block2"></div>
-    </div>
+
 </div>
+<!--<div class="colored-blocks cb2">
+    <div class="c-block c-block1"></div>
+    <div class="c-block c-block2"></div>
+</div>-->
 </body>
 </html>

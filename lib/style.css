@@ -1,12 +1,268 @@
 @font-face {
     font-family: FF Scala Sans;
     src: url("/assets/fonts/Scala Sans-Regular.ttf");
+}
+
+html, body {
+    width: 100%;
+}
+
+body {
+    font-family: FF Scala Sans, Arial, Helvetica, sans-serif;
+    background-image: url("/assets/images/kamran-abdullayev-9V1cYW4JIfQ-unsplash.jpg");
+    color: #717374;
+}
+
+#a4-paper {
+
+    max-width: calc(210mm - 50px * 2);
+    height: calc(297mm - 10px * 2);
+
+
+
+    background-color: #faf7fa;
+    margin: 10% auto;
+    padding: 10px 50px;
+}
+.colored-blocks {
+    display: flex;
+    height: 25px;
+    width: 210mm;
+    margin: 0 auto;
+
+}
+.cb1{
+    position: relative;
+    top: 140px;
+}
+.cb2{
+    position: relative;
+    bottom: 140px;
+}
+.c-block1 {
+    background-color: #e9c8c1;
+    flex: 2;
+    height: inherit;
+}
+.c-block2 {
+    background-color: #4d5152;
+    height: inherit;
+    flex: 5;
+}
+p {
+    font-size: calc(14px);
+}
+
+a {
+    text-decoration: none;
+    color: inherit
+}
+
+h1, h2 {
+    letter-spacing: 3px;
+    color: #5a5b5d;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h4 {
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+}
+
+h4:before {
+    content:" ";
+    border-style: solid;
+    border-width: 10px 0px 10px 15px;
+    border-color: transparent transparent transparent black;
+    position: absolute;
+    left: -35px;
+}
+
+main {
+    border-top: 2px solid black;
+    display: flex;
+    height: 80%;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+
+.italic-font {
+    font-style: italic;
+}
+
+header {
+    min-height: 20%;
+    display: flex;
 
 }
 
-body{
-    font-family: FF Scala Sans, Arial, Helvetica, sans-serif ;
-    background-image: url("/assets/images/kamran-abdullayev-9V1cYW4JIfQ-unsplash.jpg");
-    color:#717374;
+#avatar-section {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
 
+#avatar {
+    width: 120px;
+    height: 120px;
+    margin: auto;
+}
+
+.round-div {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid black;
+    width: 140px;
+    height: 140px;
+}
+
+.round-img {
+    border-radius: 50%;
+}
+
+#name-section {
+    flex: 5;
+    display: flex;
+
+    justify-content: start;
+    margin: auto;
+    padding-left: 10%;
+}
+
+
+#content-left-section {
+    border-right: 1px solid black;
+    flex: 3;
+    padding-right: 5%;
+}
+
+#content-right-section {
+    flex: 5;
+    padding-left: 5%;
+}
+
+.title {
+
+    margin: 30px 0;
+    border-bottom: 1px solid #e9c8c1;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-image: linear-gradient(to right, #e9c8c1 25%, #4d5152 25%) 1 stretch;
+    display: flex;
+    align-items: end;
+}
+
+#content-left-section .title {
+    justify-content: end;
+}
+
+#contacts-list {
+    display: flex;
+    justify-content: end;
+    margin-top: -20px;
+}
+
+
+/*
+#skills-list{
+    display: flex;
+    justify-content: end;
+}*/
+.experience-item {
+    border-bottom: 1px dashed black;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: end;
+
+}
+
+.contact-title {
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.contact-item p {
+    text-align: end;
+}
+
+.contact-item img {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    padding-bottom: 15px;
+}
+
+/*.div-contact-image{
+    background-size: cover;
+    background-position: center;
+
+}*/
+.contact-item {
+    margin-top: 10%;
+}
+
+.item-info {
+    word-break: break-all;
+    margin: 30px 0;
+}
+
+.experience-item {
+    margin-top: 30px;
+}
+
+.skill-name {
+    text-align: end;
+    font-weight: bold;
+}
+
+#sliders-list > li {
+    margin: 10px 0;
+}
+
+@media (max-width: 645px) {
+    #a4-paper {
+
+        height: 100%;
+        margin: 0;
+
+    }
+
+    header {
+        display: block;
+    }
+
+    main {
+        display: block
+    }
+
+    #content-left-section {
+        border: none;
+        margin: 0;
+    }
+
+    #content-right-section {
+        padding: 0;
+    }
+    #name-section{
+        justify-content: center;
+    }
 }
