@@ -9,7 +9,9 @@ html, body {
 
 body {
     font-family: FF Scala Sans, Arial, Helvetica, sans-serif;
-    background-image: url("/assets/images/kamran-abdullayev-9V1cYW4JIfQ-unsplash.jpg");
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiCV73zc_Lzp3mXwVap3z9eEETyZOFFh7I2Q&usqp=CAU");
+    background-size: cover;
+
     color: #717374;
 }
 
@@ -66,8 +68,9 @@ h1, h2 {
 
 h1 {
     font-size: 36px;
+    font-weight: bold;
 }
-
+h3{margin-top: 20px; font-size: 20px}
 h4 {
     font-weight: bold;
     text-transform: uppercase;
@@ -242,7 +245,7 @@ header {
     #a4-paper {
 
         height: 100%;
-        margin: 0;
+
 
     }
 
