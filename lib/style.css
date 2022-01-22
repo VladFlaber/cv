@@ -1,0 +1,12 @@
+@font-face {
+    font-family: FF Scala Sans;
+    src: url("/assets/fonts/Scala Sans-Regular.ttf");
+
+}
+
+body{
+    font-family: FF Scala Sans, Arial, Helvetica, sans-serif ;
+    background-image: url("/assets/images/kamran-abdullayev-9V1cYW4JIfQ-unsplash.jpg");
+    color:#717374;
+
+}
