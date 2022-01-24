@@ -3,38 +3,34 @@
     src: url("/assets/fonts/Scala Sans-Regular.ttf");
 }
 
-html, body {
-    width: 100%;
-}
 
 body {
     font-family: FF Scala Sans, Arial, Helvetica, sans-serif;
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiCV73zc_Lzp3mXwVap3z9eEETyZOFFh7I2Q&usqp=CAU");
     background-size: cover;
-
     color: #717374;
     display: flex;
     flex-flow: column;
-    align-content: flex-start
+    align-content: flex-start;
 
+}
+
+.outer-div {
+    margin: 150px auto;
 }
 
 #a4-paper {
 
     max-width: calc(210mm - 50px * 2);
     height: calc(297mm - 10px * 2);
-
-
-
     background-color: #faf7fa;
-    margin: 10% auto;
     padding: 10px 50px;
 }
-/*.colored-blocks {
+
+.colored-blocks {
     display: flex;
     height: 25px;
-    width: 210mm;
-    margin:   auto;
+    max-width: 210mm;
 
 }
 
@@ -43,12 +39,14 @@ body {
     flex: 2;
     height: inherit;
 }
+
 .c-block2 {
     background-color: #4d5152;
     height: inherit;
     flex: 5;
 
-}*/
+}
+
 p {
     font-size: calc(14px);
 }
@@ -68,7 +66,12 @@ h1 {
     font-size: 36px;
     font-weight: bold;
 }
-h3{margin-top: 20px; font-size: 20px}
+
+h3 {
+    margin-top: 20px;
+    font-size: 20px
+}
+
 h4 {
     font-weight: bold;
     text-transform: uppercase;
@@ -76,7 +79,7 @@ h4 {
 }
 
 h4:before {
-    content:" ";
+    content: " ";
     border-style: solid;
     border-width: 10px 0px 10px 15px;
     border-color: transparent transparent transparent black;
@@ -93,8 +96,6 @@ main {
 ul {
     list-style: none;
 }
-
-
 
 
 .italic-font {
@@ -243,8 +244,10 @@ header {
     #a4-paper {
 
         height: 100%;
+    }
 
-
+    .outer-div {
+        margin: 0
     }
 
     header {
@@ -263,7 +266,8 @@ header {
     #content-right-section {
         padding: 0;
     }
-    #name-section{
+
+    #name-section {
         justify-content: center;
     }
 }
